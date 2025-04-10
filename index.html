@@ -8,19 +8,22 @@
     <title>ONCE UPON A WITCHLIGHT</title>
     <style>
         body {
-           body {
-       background-image: url('https://raw.githubusercontent.com/M0D42/once-upon-the-witchlight-no-tracker/refs/heads/main/background.png'); /* Ensure the correct path */
-        background-repeat: repeat-y;
-        background-size: cover;
-        margin: 0;
-        font-family: 'MedievalSharp', Arial, sans-serif;
-        color: #333;
-        line-height: 1.6;
+            
+    background-image: url('background.webp');
+    background-repeat: repeat-y; /* Repeat only on the Y-axis */
+    background-size: 100%; /* Make the image fill the width of the screen */
+    background-position: center; /* Center the image horizontally */
+    margin: 0;
+    font-family: 'MedievalSharp', Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
 }
+
+
 
 .top {
     text-align: center;
-    background-color: rgba(20, 168, 40, 0.9);
+    background-color: rgba(28, 169, 47, 1.0);
     color: aliceblue;
     font-family: 'MedievalSharp';
     width: 100%;
@@ -43,7 +46,7 @@
 .image-container img {
     width: 150px;
     height: auto;
-    border: 2px solid #ccc;
+    border: 2px solid transparent;
     border-radius: 8px;
     transition: transform 0.3s ease;
 }
@@ -72,7 +75,7 @@
 
 .characters {
     background-color: #24262b;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     font-family: 'MedievalSharp';
     font-size: 2rem;
     text-align: center;
@@ -81,19 +84,29 @@
     border-radius: 8px;
 }
 
+.character-button {
+    background: none; /* Ensure no background color on the button */
+    border: none; /* Remove any border on the button */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
 .character-button img {
     width: 80px;
     height: auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: none; /* Ensure no border on the image */
+    background: none; /* Ensure no background color on the image */
+    border-radius: 0; /* Remove rounded corners if not needed */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    box-shadow: none; /* Remove any shadow */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .character-button img:hover {
     transform: scale(1.1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional hover shadow */
 }
-
 iframe {
     width: 100%;
     max-width: 800px;
